@@ -1,0 +1,54 @@
+{
+  "id": "65dd027f-02c4-4d67-8a49-ad50a05e7648",
+  "version": "2.0",
+  "name": "AUTOMATION SELENIUM",
+  "url": "https://demo.opencart.com/",
+  "tests": [{
+    "id": "a24544a5-0768-45a8-a22c-4cb980f30f9b",
+    "name": "DAY 3_TASK1",
+    "commands": []
+  }, {
+    "id": "a6018098-2c17-4258-8afc-42434c9dee57",
+    "name": "DAY 3_TASK-!",
+    "commands": [{
+      "id": "bf771a4a-1938-4ddd-b832-30f5d23519ea",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14bfa03f-57b0-4980-b271-46101e972bff",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89d68bd6-3abb-4a32-a2e6-ddb779ccd7c4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Continue",
+      "targets": [
+        ["linkText=Continue", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Continue')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://demo.opencart.com/index.php?route=common/home&language=en-gb')])[3]", "xpath:href"],
+        ["xpath=//main/div[2]/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d98a6e6d-12c4-4c6e-9d68-f4f4282c17f4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a24544a5-0768-45a8-a22c-4cb980f30f9b"]
+  }],
+  "urls": [],
+  "plugins": []
+}
